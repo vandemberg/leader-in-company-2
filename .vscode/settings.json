@@ -1,0 +1,5 @@
+{
+  "vim.smartRelativeLine": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "editor.formatOnSave": true
+}

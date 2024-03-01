@@ -1,3 +1,13 @@
+body, header, main {
+  max-width: 100vw;
+}
+
+
+.navbar {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 header a {
   cursor: pointer;
 }
@@ -168,4 +178,98 @@ footer ul li {
 footer p {
     color: #6c757d; /* Cor do texto */
     margin-top: 20px; /* Espaçamento acima do texto de direitos autorais */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section {
+    max-width: 100vw;
+    margin: 0px;
+  }
+
+  .navbar #btn-hire {
+    display: none;
+  }
+
+  #home {
+    height: 100vh;
+    width: 100vw;
+    justify-content: end !important;
+  }
+
+  #home div {
+    padding-top: 30px;
+    width: 100% !important;
+  }
+
+  #home div h1,
+  #home div p {
+    padding: 0px !important;
+  }
+
+  #about-us {
+    height: auto !important;
+  }
+
+  #about-us div {
+    margin: 12px;
+    width: 100% !important;
+    font-size: 0.8rem;
+  }
+
+  #why {
+    height: auto !important;
+  }
+
+  #why div {
+    margin: 12px;
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  #why div .card {
+    height: auto !important;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #why .card-body {
+    gap: 0px !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .service {
+    width: 100%;
+    flex-direction: column !important;
+  }
+
+  .service img {
+    width: 100%;
+  }
+
+  .service div {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .service h3 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+
+  .values {
+    flex-direction: column !important;
+  }
+
+  .value {
+    width: 100% !important;
+  }
 }
